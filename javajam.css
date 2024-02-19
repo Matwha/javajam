@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;500&display=swap');
+
+
+body {
+    background-image: url("resources/DALL_E_landscape.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header{
+    color: #8C3826;
+    background-color: #D2B48C;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+h1{
+    /*line-height: 200%;*/
+    font-size: 3em;
+}
+
+h2{
+    color: #8C3826;
+    font-family: 'Lemonada', cursive;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+}
+nav a {
+    text-decoration: none;
+}
+
+Footer{
+background-color: #F2B48C;
+font-size: .60em;
+font-style: italic;
+text-align: center;
+padding: 1em;
+border-top: 2px solid #8C3826;
+}
+
+#wrapper { width: 80%;
+    background-color: #FEFAEB;
+    margin-right: auto;
+    margin-left:auto;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+h4 {
+    background-color: #D2B48C; 
+    font-size: 1.2em; 
+    padding-left: .5em; 
+    padding-bottom: .25em;
+}
+
+h3, dt {
+    color: #8C3826;
+}
+
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    display: block;
+}
+
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#homehero {
+    height: 300px;
+    background-image: url('resources/DALL_E_landscape.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
