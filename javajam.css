@@ -1,97 +1,191 @@
+/* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 
 body {
     background-color: #FCEBB6;
-    background-image: url("images/fadedroad50.jpg");
+    background-image: url("resources/images/fadedroad50.jpg");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
 }
 
-header{
-    color: #8C3826;
-    background-color: #D2B48C;
-    text-align: center;
+/* Header Styles */
+header {
+    background: #D2B48C url("resources/images/coffeelogo.jpg");
+    background-repeat: no-repeat;
     padding-top: 5px;
     padding-bottom: 5px;
-
+    padding-left: 240px; /* Space for the navigation */
+    color: #231814; /* Match background color */
 }
 
-h1{
-    /*line-height: 200%;*/
-    font-size: 3em;
+header a:link,
+header a:visited {
+    color: #231814;
+    text-decoration: none;
 }
 
-h2{
-    color: #8C3826;
-    font-family: 'Lemonada', cursive;
+header a:hover {
+    color: #FEF6C2;
 }
 
+/* Navigation Styles */
 nav {
+    float: left;
+    width: 200px;
+   
+    position: fixed;
+    
     text-align: center;
     font-weight: bold;
-    font-size: 1.5em; 
-    padding-top: 5px; 
-    padding-bottom: 5px; 
+    font-size: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
 nav a {
     text-decoration: none;
 }
 
-Footer{
-background-color: #F2B48C;
-font-size: .60em;
-font-style: italic;
-text-align: center;
-padding: 1em;
-border-top: 2px solid #8C3826;
+nav a:link {
+    color: #FEF6C2;
 }
 
-#wrapper { width: 80%;
-    background-color: #FEFAEB;
-    margin-right: auto;
-    margin-left:auto;
-    min-width: 900px;
-    max-width: 1280px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
-h4 {
-    background-color: #D2B48C; 
-    font-size: 1.2em; 
-    padding-left: .5em; 
-    padding-bottom: .25em;
+nav a:visited {
+    color: #D2B48C;
 }
 
-h3, dt {
-    color: #8C3826;
+nav a:hover {
+    color: #CC9933;
 }
 
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Main Content Styles */
 main {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 200px;
+    padding-top: 0;
     padding-bottom: 2em;
+    background-color: #FEF6C2;
+    overflow: auto;
     display: block;
 }
 
-.details {
-    padding-left: 20%;
-    padding-right: 20%;
+main h2,
+main h3,
+main h4,
+main p,
+main div,
+main ul,
+main dl {
+    padding-left: 3em;
+    padding-right: 2em;
 }
 
+/* Footer Styles */
+footer {
+    background-color: #F2B48C;
+    font-size: 0.60em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    border-top: 2px solid #8C3826;
+}
+
+/* Wrapper Styles */
+#wrapper {
+    width: 80%;
+    background-color: #231814;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    color: #8C3826;
+    font-family: 'Lemonada', cursive;
+}
+
+h3,
+dt {
+    color: #8C3826;
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: .25em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #aaa;
+    clear: left;
+}
+
+/* Image Styles */
 img {
     border-style: none;
     max-width: 100%;
     height: auto;
 }
 
+/* Float Styles */
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.onethird {
+    float: left;
+    width: 33%;
+}
+
+/* Hero Image Styles */
 #homehero {
-    height: 300px;
-    background-image: url(images/hero.jpg);
-    background-size: cover;
+    background-image: url(resources/images/hero.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    height: 300px;
+}
+
+#heromugs,
+#heroguitar {
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#heromugs {
+    background-image: url('resources/images/heromugs.jpg');
+}
+
+#heroguitar {
+    background-image: url('resources/images/hero.jpg'); /* Replace with the actual guitar image filename */
+}
+
+/* Details Styles */
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
 }
