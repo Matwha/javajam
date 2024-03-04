@@ -1,2 +1,4 @@
 # javajam
-javajam assignments 
+javajam assignments:
+
+now assignment 6
