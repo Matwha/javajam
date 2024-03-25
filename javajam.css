@@ -164,32 +164,14 @@ img {
 	padding-left: 1em;
 	width: 80%;
   }
-	
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+
   input, textarea {
 	margin-bottom: .5em;
   }
-
-  @media only screen and (min-width: 600px) {
-	#herojobs {
-	  height: 300px;
-	  background-image: url('images/herojobs.jpg'); /* Adjusted the file path */
-	  background-repeat: no-repeat;
-	  background-size: 100% 100%;
-	}
-	
-	form {
-	  width: 40%;
-	  display: grid;
-	  grid-template-columns: 6em 1fr;
-	  grid-gap: 1em;
-	}
-  
-	input[type="submit"] {
-	  grid-column: 2 / 3;
-	  width: 9em;
-	}
-  }
-  
 
 #mobile {
 	display: inline;
@@ -200,40 +182,28 @@ img {
 }
 
 footer {
-	background-color: #D2B48C;
+	background-color: #D2B48E;
 	font-size: .60em;
 	font-style: italic;
 	text-align: center;
 	padding-bottom: 1em;
 	border-top: 2px solid #8C3826;
 }
-form {
-	display: flex;
-	flex-direction: column;
-	padding-left: 1em;
-	width: 80%;
-  }
-  
-  input, textarea {
-	margin-bottom: .5em;
-  }
+@media only screen and (min-width: 600px) { 
 
-  @media only screen and (min-width: /* your breakpoint for larger screens */) {
 	form {
 	  width: 40%;
 	  display: grid;
-	  grid-template-columns: 6em 1fr;
+	  grid-template-columns: 6em 1fr;  
 	  grid-gap: 1em;
 	}
-  
 	input[type="submit"] {
-	  grid-column: 2;
-	  width: 9em;
-	}
-  
-  }
+		grid-column: 2;  
+		width: 9em;
+	  }
 
-/* Configure Medium Layout */
+
+	/* Configure Medium Layout */
 @media (min-width: 600px) {
 	header {
 		padding-left: 0;
