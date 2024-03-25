@@ -284,37 +284,38 @@ footer {
 /* Configure Large Layout */
 @media (min-width: 1024px) {
 	@supports (display: grid) {
-		header {
-			grid-area: header;
-		}
-
-		nav {
-			grid-area: nav;
-		}
-
-		main {
-			grid-area: main;
-		}
-
-		footer {
-			grid-area: footer;
-		}
-
-		#wrapper {
-			display: grid;
-			grid-template:
-				"header header"
-				"nav    main"
-				"footer footer"
-				/ 200px;
-		}
-
-		nav ul {
-			flex-direction: column;
-		}
-
-		header {
-			background-image: url(images/coffeelogo.jpg);
-		}
+	  header {
+		grid-area: header;
+	  }
+  
+	  nav {
+		grid-area: nav;
+	  }
+  
+	  main {
+		grid-area: main;
+	  }
+  
+	  footer {
+		grid-area: footer;
+	  }
+  
+	  #wrapper {
+		display: grid;
+		grid-template:
+		  "header header"
+		  "nav main"
+		  "footer footer"
+		  / 200px;
+	  }
+  
+	  nav ul {
+		flex-direction: column;
+	  }
+  
+	  header {
+		background-image: url(images/coffeelogo.jpg);
+	  }
 	}
-}
+  }
+  
